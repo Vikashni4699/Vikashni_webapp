@@ -1,12 +1,75 @@
 <!DOCTYPE HTML>
 <html>
-<head>Form login</head>
+<head>
+<style>
+form {
+text-align: center;
+width: 400px;
+height: 500px;
+position: absolute;
+padding: 0px 50px;
+top: 50%;
+left: 50%;
+margin: -250px 0 0 -250px;
+background: #F7F9F9;
+font-family: arial;
+}
+a {
+font-family: arial;
+color: #117A65;
+text-decoration: none;
+}
+h1 {
+font-family: arial;
+color: #117A65;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+    padding: 5px;
+    height: 56px;
+    border-radius: 74px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding-left: 75px;
+
+}
+input[type=submit]{
+width: 100%;
+    padding: 5px;
+    height: 56px;
+    border-radius: 74px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-left: 15px;
+    text-align: center;
+    background-color: #117A65;
+    color: white;
+    
+}
+
+body {
+  background: #76D7C4;
+  font-family: arial;
+}
+
+</style></head>
 <title>Just Login</title>
 <body>
 <form method="post" action="connect.php">
-UserName: <input type="text" name="Username"><br>
-Password: <input type="password" name="password"><br>
-<input type="submit" value="Login"><br>
+<h1>Login</h1>
+<br>
+ <input type="text" placeholder="Enter Username" name="Username">
+<br>
+<br>
+ <input type="password" placeholder="Enter Password" name="password"><br>
+<br>
+ <input type="submit" value="Login"><br>
+<br>
+<a href="#">Forgot Password?</a>
+
 </form>
 </body>
 </html>
